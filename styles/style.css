@@ -6,30 +6,66 @@
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  background-color: #000028;
+  background-color: var(--main-bg-color);
+  font-family: var(--main-font);
 }
 
 .header {
+  position: relative;
   display: grid;
-  height: 100vh;
-  min-height: 668px;
+  grid-template-rows: 1fr min-content 1fr;
+  justify-items: end;
+  align-items: center;
+  block-size: 100vh;
+  min-block-size: 668px;
 }
 
 .header__rec {
   position: absolute;
   color: var(--accent-color);
   font-family: var(--main-font);
+  font-size: var(--main-font-size);
   font-weight: 400;
-
+  gap: var(--main-gap);
+  line-height: var(--main-line-height);
+  text-transform: uppercase;
+  inset-inline-end: calc(var(--main-gap) + 28px);
+  inset-block-start: calc(var(--main-gap) + 2px);
 }
 
 .header__rec::after {
   content: '';
   position: absolute;
-  width: 9px;
+  inline-size: 10px;
+  block-size: 10px;
   border-radius: 50%;
+  margin: -5px -20px 0 0;
   box-shadow: 0 0 4px 2px var(--accent-color);
   background-color: var(--accent-color);
+  inset-inline-end: 0;
+  inset-block-start: 50%;
+}
+
+.decorated-zone::before {
+  content: '';
+  position: absolute;
+  inline-size: 25px;
+  block-size: 25px;
+  border-inline-end: 1px solid var(--accent-color);
+  border-block-start: 1px solid var(--accent-color);
+  inset-inline-end: var(--main-gap);
+  inset-block-start: var(--main-gap);
+}
+
+.decorated-zone::after {
+  content: '';
+  position: absolute;
+  inline-size: 25px;
+  block-size: 25px;
+  border-inline-start: 1px solid var(--accent-color);
+  border-block-end: 1px solid var(--accent-color);
+  inset-inline-start: var(--main-gap);
+  inset-block-end: var(--main-gap);
 }
 
 .header__theme-menu {
@@ -39,4 +75,22 @@
 .header__text {
   font-family: var(--main-font), sans-serif;
   font-weight: 700;
+  font-size: var(--main-font-size);
+  line-height: var(--main-line-height);
+}
+
+.header__text_title {
+  font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
+  color: var(--header-text-color);
+  text-shadow: 4px 4px 0 var(--accent-color);
+  line-height: 83%;
+}
+
+.header__text_paragraph {
+  overflow-wrap: break-word;
+}
+
+.title_decor {
+  background-color: var(--title-decor);
+  color: var(--title-text-color);
 }
