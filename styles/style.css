@@ -77,6 +77,8 @@
   font-weight: 700;
   font-size: var(--main-font-size);
   line-height: var(--main-line-height);
+  margin-inline-start: 10px;
+  margin-inline-end: 10px;
 }
 
 .header__text_title {
@@ -87,10 +89,41 @@
 }
 
 .header__text_paragraph {
-  overflow-wrap: break-word;
+  margin-block-start: -10px;
 }
 
 .title_decor {
   background-color: var(--title-decor);
   color: var(--title-text-color);
+}
+
+.question__section {
+  margin-inline-start: 10px;
+  margin-inline-end: 10px;
+}
+
+.concentration__heading {
+  color: var(--accent-color);
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.concentration__heading_difficult {
+  margin-block-start: 40px;
+}
+
+.concentration__content {
+  margin-block-start: 20px;
+}
+
+.concentration__text {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--paragraph-text-color);
+  line-height: var(--main-line-height);
+  margin-block-start: 10px;
+}
+
+.concentration__heading_reduces {
+  margin-block-start: 50px;
 }
