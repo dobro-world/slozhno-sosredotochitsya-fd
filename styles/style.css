@@ -25,12 +25,47 @@
   color: var(--accent-color);
   font-family: var(--main-font);
   font-size: var(--main-font-size);
-  font-weight: 400;
+  font-weight: var(--thin-font-weight);
   gap: var(--main-gap);
   line-height: var(--main-line-height);
   text-transform: uppercase;
   inset-inline-end: calc(var(--main-gap) + 28px);
   inset-block-start: calc(var(--main-gap) + 2px);
+}
+
+.header__theme-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--buttons-gap);
+  list-style: none;
+  font-size: var(--buttons-font-size);
+}
+
+.header__theme-menu-button {
+  background-color: transparent;
+  border: 1px solid transparent;
+  color: var(--button-text-color);
+  margin-inline-end: var(--buttons-margin-inline-end);
+  margin-block-start: var(--buttons-margin-block-start);
+  text-transform: lowercase;
+  padding-inline: 15px;
+  text-align: center;
+}
+
+.header__theme-menu-button_active {
+  border: 1px solid var(--button-border-color);
+}
+
+.header__theme-menu-button:hover:not(.header__theme-menu-button_active) {
+  border: 1px solid var(--button-text-color-hover);
+}
+
+.header__theme-menu-button:focus {
+  outline: none;
+}
+
+.header__theme-menu-button:focus-visible {
+  border-bottom: 1px solid var(--button-border-color);
 }
 
 .header__rec::after {
@@ -74,18 +109,18 @@
 
 .header__text {
   font-family: var(--main-font), sans-serif;
-  font-weight: 700;
+  font-weight: var(--bold-font-weight);
   font-size: var(--main-font-size);
   line-height: var(--main-line-height);
-  margin-inline-start: 10px;
-  margin-inline-end: 10px;
+  margin-inline-start: var(--header-margin-block-start);
+  margin-inline-end: var(--header-margin-block-end);
 }
 
 .header__text_title {
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   color: var(--header-text-color);
   text-shadow: 4px 4px 0 var(--accent-color);
-  line-height: 83%;
+  line-height: var(--header-title-line-height);
 }
 
 .header__text_paragraph {
@@ -98,32 +133,91 @@
 }
 
 .question__section {
-  margin-inline-start: 10px;
-  margin-inline-end: 10px;
+  margin-inline-start: var(--question-margin-inline-start);
+  margin-inline-end: var(--question-margin-inline-end);
 }
 
 .concentration__heading {
   color: var(--accent-color);
-  font-weight: 700;
-  font-size: 18px;
+  font-weight: var(--bold-font-weight);
+  font-size: var(--main-font-size);
 }
 
 .concentration__heading_difficult {
-  margin-block-start: 40px;
+  margin-block-start: var(--concentration-heading-margin-block-start);
 }
 
 .concentration__content {
-  margin-block-start: 20px;
+  margin-block-start: var(--concentration-content-margin-block-start);
 }
 
 .concentration__text {
-  font-size: 18px;
-  font-weight: 400;
+  font-size: var(--main-font-size);
+  font-weight: var(--thin-font-weight);
   color: var(--paragraph-text-color);
   line-height: var(--main-line-height);
-  margin-block-start: 10px;
+  margin-block-start: var(--concentration-text-margin-block-start);
 }
 
 .concentration__heading_reduces {
-  margin-block-start: 50px;
+  margin-block-start: var(--concentration-heading-reduces-margin-block-start);
+}
+
+.title_decor_recommendations {
+  font-weight: var(--bold-font-weight);
+  font-size: var(--main-font-size);
+}
+
+.titles_five_recommendations {
+  font-weight: var(--thin-font-weight);
+  font-size: var(--main-font-size);
+  margin-block-start: var(--titles-recommendations-margin-block-start);
+}
+
+.text__link {
+  text-shadow: 2px 2px 0 var(--accent-color);
+  text-decoration: none;
+}
+
+.text__link:hover {
+  text-shadow: 2px 2px 0 var(--accent-color);
+  border-bottom: 1px solid var(--text-link-hover-color);
+}
+
+.text__link:focus {
+  outline: none;
+}
+
+.text__link:focus-visible {
+  border: 1px solid var(--text-link-hover-color);
+}
+
+.images__section {
+  display: flex;
+  flex-direction: column;
+  margin-block-start: var(--images-section-margin-block-start);
+}
+
+.image__content {
+  inline-size: 100%;
+  margin-block-start: var(--image-content-margin-block-start);
+}
+
+.footer{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  block-size: 100vh;
+  min-block-size: 667px;
+  margin-block-start: var(--footer-margin-block-start);
+}
+
+.footer__heading {
+  font-size: var(--footer-heading-font-size);
+  text-transform: lowercase;
+  color: var(--footer-text-color);
+  text-shadow: 2px 2px 0 var(--accent-color);
+  margin-block-start: var(--footer-heading-margin-block-start);
+  margin-block-end: var(--footer-heading-margin-block-end);
 }
