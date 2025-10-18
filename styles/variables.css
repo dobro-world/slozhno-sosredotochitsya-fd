@@ -5,7 +5,7 @@
 :root {
   --main-font: 'IBM Plex mono';
   --main-font-size: 18px;
-  --dark-background-image: url(../images/cover-image-dark.png);
+  --background-image: url(../images/cover-image-dark.png);
   --accent-color: #FF0070;
   --main-bg-color: #000028;
   --main-gap: 10px;
@@ -16,6 +16,7 @@
   --button-border-color: #FF0070;
   --button-text-color: #FF0070;
   --button-text-color-hover: #FF007066;
+  --decorated-zone-color: #FF0070;
   --buttons-font-size: 18px;
   --buttons-gap: 10px;
   --buttons-margin-inline-end: 6px;
@@ -23,10 +24,11 @@
   --text-link-hover-color: #F1B2CE;
   --title-text-color: #000028;
   --paragraph-text-color: #F1B2CE;
+  --concentration-heading-color: #FF0070;
   --thin-font-weight: 400;
   --bold-font-weight: 700;
-  --header-margin-block-start: 10px;
-  --header-margin-block-end: 10px;
+  --header-margin-inline-start: 10px;
+  --header-margin-inline-end: 10px;
   --header-margin-inline-end: 10px;
   --question-margin-inline-start: 10px;
   --question-margin-inline-end: 10px;
@@ -37,8 +39,8 @@
   --titles-recommendations-margin-block-start: 20px;
   --images-section-margin-block-start: 50px;
   --image-content-margin-block-start: 10px;
-  --footer-heading-font-size: 116px;
   --footer-text-color: #DB00FF;
+  --footer-heading-shadow-color: #FF0070;
   --footer-margin-block-start: 40px;
   --footer-heading-margin-block-start: 14px;
   --footer-heading-margin-block-end: 13px;
