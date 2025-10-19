@@ -44,4 +44,9 @@
     --footer-text-color: #FFC2E6;
     --footer-heading-shadow-color: #FF0070;
   }
+
+  .header__rec::after,
+  .header__rec {
+    display: none;
+  }
 } 
