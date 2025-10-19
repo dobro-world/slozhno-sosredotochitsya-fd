@@ -420,6 +420,7 @@ body {
     max-inline-size: 315px;
     inline-size: 100%;
     margin-block-start: 80px;
+    grid-column: 1 / -1;
   }
 
   .question__section-attention {
@@ -431,10 +432,6 @@ body {
 
   .question__section-attention .concentration__content {
     margin-block-start: 0;
-  }
-
-  .question__section-attention .concentration__heading {
-    grid-column: 1 / -1;
   }
 
   .question__section_decor {
