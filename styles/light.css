@@ -26,6 +26,11 @@
   --footer-heading-shadow-color: #FF0070;
 }
 
+.theme-light .header__rec::after,
+.theme-light .header__rec {
+  display: none;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     --background-image: url(../images/cover-image-light.png);
@@ -50,3 +55,4 @@
     display: none;
   }
 } 
+
