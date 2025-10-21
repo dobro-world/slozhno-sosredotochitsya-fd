@@ -174,7 +174,7 @@
   font-size: var(--main-font-size);
 }
 
-.five_recommendations_decor {
+.subtitle_recommendations_decor {
   margin-block-start: var(--titles-recommendations-margin-block-start);
 }
 

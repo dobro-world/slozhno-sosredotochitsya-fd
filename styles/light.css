@@ -32,7 +32,7 @@
 }
 
 @media (prefers-color-scheme: light) {
-  :root {
+  :root:not(.theme-dark) {
     --background-image: url(../images/cover-image-light.png);
     --accent-color: #FF8DCB;
     --main-bg-color: #FFF1F7;
@@ -50,8 +50,8 @@
     --footer-heading-shadow-color: #FF0070;
   }
 
-  .header__rec::after,
-  .header__rec {
+  :root:not(.theme-dark) .header__rec::after,
+  :root:not(.theme-dark) .header__rec {
     display: none;
   }
 } 
